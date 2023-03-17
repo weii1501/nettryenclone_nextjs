@@ -27,7 +27,7 @@ export default function Home() {
             <ListItem title={true}/>
             <div className="basis-1/3 flex flex-col justify-between w-full h-auto gap-4 ml-9">
               <Rate />
-              <Comments avt={false}/>
+              <Comments avt={false} navCmt={false}/>
             </div>
           </div>
         </div>

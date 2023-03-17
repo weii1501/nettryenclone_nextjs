@@ -9,7 +9,7 @@ import {
 
 export default function Item() {
     return (
-        <div className="basis-1/4 w-auto h-[338px] flex flex-col justify-start items-center gap-2 rounded-[4px] ">
+        <a className="basis-1/4 w-auto h-[338px] flex flex-col justify-start items-center gap-2 rounded-[4px] " href={`/readcomic`}>
             <div className="w-full h-[197px] border-[1px] border-black-rgba-border rounded-[2px]">
                 <div className="w-full h-full bg-[url('/images/SlideItem/tro-thanh-tai-phiet-nho-game.jpg')] bg-cover my-[2px] flex flex-col justify-end items-center">
                     <div className="w-full h-[25px] bg-black-rgba text-white text-[12px] flex flex-row justify-start items-center p-1 relative  ">
@@ -43,6 +43,6 @@ export default function Item() {
                     <p className="italic ml-1 text-black-rgba">23 ngày trước</p>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }

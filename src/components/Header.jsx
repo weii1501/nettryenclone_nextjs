@@ -13,12 +13,12 @@ export default function Header() {
     <>
         <header className="w-full h-[50px] bg-[url('/images/bg_header.jpeg')] bg-top flex mx-auto justify-center items-center sticky">
             <div className="w-[1030px] h-[32px] flex flex-row items-center gap-2 justify-between px-4">
-                <div className="w-[150px] h-full my-2 object object-cover cursor-pointer">
+                <a className="w-[150px] h-full my-2 object object-cover cursor-pointer" href={'/'}>
                     <img
                         src="/images/logo.png"
                         alt="logo"
                     />
-                </div>
+                </a>
                 <div className="w-[430px] h-full bg-white">
                     <input type="text" placeholder="Tìm truyện..." className="w-11/12 h-full mx-[8px] focus:border-none bg-transparent outline-0"/>
                     <div className="w-1/12 h-full inline cursor-pointer">        
@@ -30,7 +30,7 @@ export default function Header() {
                         <FontAwesomeIcon icon={faComment} size="xl" color="white"  className="cursor-pointer" />
                 </div>
                 <div className="w-[145px] h-full text-center flex justify-between items-center text-white text-base">
-                    <a className="hover:underline cursor-pointer">Đăng kí</a> / <a className="hover:underline cursor-pointer">Đăng nhập</a>
+                    <a className="hover:underline cursor-pointer" href="/registry">Đăng kí</a> / <a className="hover:underline cursor-pointer" href="/login">Đăng nhập</a>
                 </div>
             </div>
         </header>
