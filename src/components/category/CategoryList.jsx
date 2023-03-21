@@ -3,7 +3,7 @@ import React from 'react'
 export default function CategoryList() {
     return (
         <div className="w-full h-auto">
-            <div className="w-full h-full mx-2 flex flex-col justify-start items-center divide-y divide-black-rgba-border border-[1px] border-black-rgba-border">
+            <div className="w-full h-full lg:mx-2 flex flex-col justify-start items-center divide-y divide-black-rgba-border border-[1px] border-black-rgba-border">
                 <div className="w-full h-auto py-2 ml-5">
                     <span className="text-[16px] font-bold text-[#2780b9]">Thể loại</span>
                 </div>

@@ -1,10 +1,10 @@
 import { Inter } from 'next/font/google'
-import Header from '../../components/Header'
-import NavBar from '../../components/NavBar'
-import Advertise from '../../components/Advertise'
-import Footer from '../../components/Footer'
-import OnTop from '../../components/OnTop'
-import Form from '../../components/Form'
+import Header from '../../components/common/Header'
+import NavBar from '../../components/common/NavBar'
+import Advertise from '../../components/common/Advertise'
+import Footer from '../../components/common/Footer'
+import OnTop from '../../components/common/OnTop'
+import Form from '../../components/form/Form'
 
 const inter = Inter({ subsets: ['latin'] })
 

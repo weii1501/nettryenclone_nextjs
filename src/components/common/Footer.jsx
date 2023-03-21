@@ -4,8 +4,8 @@ import React from 'react'
 export default function Footer() {
     return (
         <footer className="w-full h-auto flex justify-center items-center bg-[#222222]">
-            <div className="w-[1030px] h-full flex flex-row gap-2 justify-between items-center">
-                <div className="basis-1/3 flex flex-col justify-between items-start py-4 ml-4">
+            <div className="w-[1030px] h-full flex lg:flex-row flex-col gap-2 lg:justify-between lg:items-center">
+                <div className="basis-1/3 flex flex-col justify-between items-start py-4 lg:ml-4 ml-2">
                     <img 
                         src="/images/footerimg/logo-nettruyen.webp" 
                         alt="logo-nettruyen" 
@@ -18,7 +18,8 @@ export default function Footer() {
                     />
                     <span className="text-white text-[13px]">Copyright © 2023 NetTruyen</span>
                 </div>
-                <div className="basis-2/3 flex flex-col justify-between items-start py-4 mr-4">
+                <div className="w-full h-[1px] bg-white mx-1 lg:hidden"></div>
+                <div className="basis-2/3 flex flex-col justify-between items-start py-4 mr-4 mx-1">
                     <span className="w-full h-auto text-[18px] text-white py-[5px]">Từ Khóa</span>
                     <div className="w-full h-auto text-white flex flex-row flex-wrap justify-start items-start py-[5px] pr-5 gap-2">
                         <span className="text-[13px] p-[5px] border-white border-[1px] rounded cursor-pointer">Truyện tranh</span>

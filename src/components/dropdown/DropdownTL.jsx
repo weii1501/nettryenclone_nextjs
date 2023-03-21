@@ -11,56 +11,56 @@ export default function DropdownTL() {
 
     return (
         <>
-            <div className="w-[550px] h-[450px] absolute hidden group-hover:flex bg-white z-10 top-[44px] left-0  flex-col flex-wrap px-[25px] p-1 gap-0 " >
-                <div className="w-1/4 h-[34px] flex items-center justify-start">
+            <div className="lg:w-[550px] lg:h-[450px] w-full h-auto lg:absolute hidden lg:group-hover:flex lg:bg-white bg-black z-10 top-[44px] left-0  flex-col flex-wrap px-[25px] p-1 gap-0 " >
+                <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start">
                     <span className="text-sm font-bold text-red-600">Tất cả</span>
                 </div>
                 {tatCa.map((item, index) => (
-                    <div className="w-1/4 h-[34px] flex items-center justify-start hover:text-purple-700" key={`tatCa ${index}`}>
+                    <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start lg:hover:text-purple-700" key={`tatCa ${index}`}>
                         <span className="text-sm ">{item}</span>
                     </div>
                 ))}
-                <div className="w-1/4 h-[34px] flex items-center justify-start">
+                <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start">
                     <span className="text-sm font-bold text-red-600">Cổ đại</span>
                 </div>
                 {coDai.map((item, index) => (
-                    <div className="w-1/4 h-[34px] flex items-center justify-start hover:text-purple-700" key={`coDai ${index}`}>
+                    <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start lg:hover:text-purple-700" key={`coDai ${index}`}>
                         <span className="text-sm ">{item}</span>
                     </div>
                 ))}
-                <div className="w-1/4 h-[34px] flex items-center justify-start">
+                <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start">
                     <span className="text-sm font-bold text-red-600">Đam mỹ</span>
                 </div>
                 {damMy.map((item, index) => (
-                    <div className="w-1/4 h-[34px] flex items-center justify-start hover:text-purple-700" key={`damMy ${index}`}>
+                    <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start lg:hover:text-purple-700" key={`damMy ${index}`}>
                         <span className="text-sm ">{item}</span>
                     </div>
                 ))}
-                <div className="w-1/4 h-[34px] flex items-center justify-start">
+                <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start">
                     <span className="text-sm font-bold text-red-600">Manhua</span>
                 </div>
                 {manHua.map((item, index) => (
-                    <div className="w-1/4 h-[34px] flex items-center justify-start hover:text-purple-700" key={`manHua ${index}`}>
+                    <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start lg:hover:text-purple-700" key={`manHua ${index}`}>
                         <span className="text-sm ">{item}</span>
                     </div>
                 ))}
-                <div className="w-1/4 h-[34px] flex items-center justify-start">
+                <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start">
                     <span className="text-sm font-bold text-red-600">Ngôn tình</span>
                 </div>
                 {ngonTinh.map((item, index) => (
-                    <div className="w-1/4 h-[34px] flex items-center justify-start hover:text-purple-700" key={`ngonTinh ${index}`}>
+                    <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start lg:hover:text-purple-700" key={`ngonTinh ${index}`}>
                         <span className="text-sm ">{item}</span>
                     </div>
                 ))}
-                <div className="w-1/4 h-[34px] flex items-center justify-start">
+                <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start">
                     <span className="text-sm font-bold text-red-600">Romance</span>
                 </div>
                 {romance.map((item, index) => (
-                    <div className="w-1/4 h-[34px] flex items-center justify-start hover:text-purple-700" key={`romance ${index}`}>
+                    <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start lg:hover:text-purple-700" key={`romance ${index}`}>
                         <span className="text-sm ">{item}</span>
                     </div>
                 ))}
-                <div className="w-1/4 h-[34px] flex items-center justify-start">
+                <div className="lg:w-1/4 w-1/2 h-[34px] flex items-center justify-start">
                     <span className="text-sm font-bold text-red-600">Xuyên không</span>
                 </div>
             </div>

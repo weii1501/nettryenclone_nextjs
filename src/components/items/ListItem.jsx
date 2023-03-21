@@ -5,9 +5,9 @@ import {
     faAngleRight,
     faFilter
 } from '@fortawesome/free-solid-svg-icons'
-import SlideItem from '../components/SlideItem'
+import SlideItem from '../slides/SlideItem'
 
-import Item from '../components/Item'
+import Item from './Item'
 
 export default function ListItem({ title }) {
   return (
@@ -27,7 +27,7 @@ export default function ListItem({ title }) {
                 </>
             ) : ('')}
         </div>
-        <div className="w-ful h-auto grid grid-cols-4 gap-2">
+        <div className="w-ful h-auto grid lg:grid-cols-4 grid-cols-2 gap-2">
             <Item />
             <Item />
             <Item />
@@ -50,8 +50,8 @@ export default function ListItem({ title }) {
             <Item />
             <Item />
         </div>
-        <div className="w-ful h-auto flex justify-center items-center my-[50px]">
-            <div className="h-[36px] w-[514px] flex flex-row items-center justify-start gap-1 text-[15px]">
+        <div className="w-ful h-auto flex justify-center items-center my-[50px] ">
+            <div className="h-[36px] w-[514px] flex flex-row items-center justify-start gap-1 text-[15px] flex-wrap">
                 <span className="cursor-pointer basis-1/12 h-full border-[1px] border-black-rgba-border flex justify-center items-center text-[#999999]">{`<`}</span>
                 <span className="cursor-pointer basis-1/12 h-full border-[1px] border-black-rgba-border flex justify-center items-center text-[#ffff] bg-[#337ab7]">1</span>
                 <span className="cursor-pointer basis-1/12 h-full border-[1px] border-black-rgba-border flex justify-center items-center text-[#999999]">2</span>

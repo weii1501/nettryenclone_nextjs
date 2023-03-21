@@ -8,7 +8,7 @@ import {
     faSquareFacebook,
     faComments
 } from '@fortawesome/free-solid-svg-icons'
-import CommentItem from '../components/CommentsItem'
+import CommentItem from './CommentsItem'
 import { AiFillFacebook } from 'react-icons/ai';
 
 export default function Comments({ avt, navCmt }) {

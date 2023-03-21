@@ -1,11 +1,11 @@
-import React, { useState, useRef, useCallback } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
     faAngleRight,
     faChevronRight,
     faChevronLeft
 } from '@fortawesome/free-solid-svg-icons'
-import SlideItem from '../components/SlideItem'
+import SlideItem from './SlideItem'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,7 +20,18 @@ import { Pagination, Navigation } from "swiper";
 
 export default function Slide() {
     const [swiperRef, setSwiperRef] = useState(null);
+    
     const sliderRef = useRef(null);
+
+    const [width, setWidth] = useState(0); // default width, detect on server.
+    
+    const handleResize = () => setWidth(window.innerWidth);
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [handleResize]);
+
+    
 
     const handlePrev = useCallback(() => {
       if (!sliderRef.current) return;
@@ -42,7 +53,9 @@ export default function Slide() {
                 <Swiper
                     ref={sliderRef}
                     onSwiper={setSwiperRef}
+                    // slidesPerView={width < 760 ? 2 : 5}
                     slidesPerView={5}
+
                     centeredSlides={false}
                     spaceBetween={10}
                     pagination={{
@@ -80,6 +93,8 @@ export default function Slide() {
                     </div>
                 </button>
             </div>
+
         </>
     )
 }
+

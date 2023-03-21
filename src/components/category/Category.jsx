@@ -7,8 +7,8 @@ import {
     faList
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ListItem from './ListItem'
-import Comments from './Comments'
+import ListItem from '../items/ListItem'
+import Comments from '../comments/Comments'
 
 export default function Category() {
     return (

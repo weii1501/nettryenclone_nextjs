@@ -1,6 +1,6 @@
 import React from 'react'
-import DropdownTl from '../components/DropdownTL'
-import DropdownXH from '../components/DropdownXH'
+import DropdownTl from '../dropdown/DropdownTL'
+import DropdownXH from '../dropdown/DropdownXH'
 
 import { 
     faHouseChimney,
@@ -9,11 +9,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function NavBar() {
+export default function NavBar({ toggle }) {
 
     return (
         <>
-            <nav className="w-full h-[44px] bg-[#e4e4e4] flex justify-center top-0 sticky z-30">
+            <nav className={`w-full h-[44px] bg-[#e4e4e4] lg:flex justify-center top-0 sticky z-10 hidden`}>
                 <div className="w-[1030px] h-full flex flex-row justify-start items-center px-4">
                     <a className="min-w-[48px] h-full text-sm hover:bg-white hover:text-purple-700 flex justify-center items-center px-[12px]" href={`/`}>
                         <FontAwesomeIcon icon={faHouseChimney} size="lg"/> 

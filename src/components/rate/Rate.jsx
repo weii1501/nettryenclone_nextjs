@@ -1,5 +1,5 @@
 import React from 'react'
-import RateItem from '../components/RateItem'
+import RateItem from './RateItem'
 
 export default function Rate() {
     return (
